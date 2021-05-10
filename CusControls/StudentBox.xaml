@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Brite.CusControls.StudentBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Brite.CusControls"
+             mc:Ignorable="d" VerticalAlignment="Center" HorizontalAlignment="Left"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks" xmlns:cuscontrols="clr-namespace:Brite.CusControls"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      Background="Transparent"
+      TextElement.FontWeight="Medium"
+      TextElement.FontSize="14">
+    <materialDesign:Card UniformCornerRadius="30" Margin="10" materialDesign:ShadowAssist.ShadowDepth="Depth2" Padding="20" Background="White">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="10 0">
+                <TextBlock Text="Name" FontSize="12" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt"/>
+                <TextBlock x:Name="StuName" FontSize="15" Text="Name" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Margin="10 0">
+                <TextBlock Text="Roll" FontSize="12" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt"/>
+                <TextBlock x:Name="StuRoll" FontSize="15" Text="Name" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Margin="10 0">
+                <TextBlock Text="Branch" FontSize="12" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt"/>
+                <TextBlock x:Name="StuBranch" FontSize="15" Text="Name" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Margin="10 0">
+                <TextBlock Text="Sem" FontSize="12" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt"/>
+                <TextBlock x:Name="StuSem" FontSize="15" Text="Name" FontFamily="/Brite;component/Fonts/Cooper/#Cooper Hewitt" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>

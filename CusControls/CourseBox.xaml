@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Brite.CusControls.CourseBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Brite.CusControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             mc:Ignorable="d">
+    <Border x:Name="CoursContainer" MaxHeight="200" MaxWidth="200" MinHeight="200" MinWidth="200" Margin="15" CornerRadius="15">
+        <StackPanel Margin="0 40 0 0" Orientation="Vertical">
+            <Grid Width="100" Height="100">
+                <Ellipse Stroke="#998F8F8F"/>
+                <TextBlock Foreground="White" VerticalAlignment="Center" x:Name="CourseInitial" HorizontalAlignment="Center" FontSize="50" Text="T" Height="auto"/>
+            </Grid>
+            <TextBlock Foreground="White" x:Name="CourseName" Text="Subject Name" FontWeight="Bold" FontSize="17" HorizontalAlignment="Center" Margin="0 15 0 2" TextWrapping="WrapWithOverflow" TextTrimming="CharacterEllipsis" MaxWidth="150" MinHeight="20" MaxHeight="20"/>
+        </StackPanel>
+    </Border>
+</UserControl>
